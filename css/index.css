@@ -1,6 +1,20 @@
-#rodape {
+#rodape-superior{
     width: 100%;
     height: 250px;
     text-align: center;
     background-color: rgba(165, 42, 42, 0.733);
+}
+#menu {
+    height: 50px;
+    text-align: center;
+    background-color: aqua;
+}
+section{
+    text-align: center;
+}
+#rodape-inferior{
+    clear: both; /*não permite elementos flutuantes ao lado*/
+    text-align: center; /*alinhamento do texto*/
+    padding: 10px; /*espaço entre a borda e o conteúdo do elemento*/
+    background-color: #cf8787; /*cor de fundo*/
 }
