@@ -1,17 +1,28 @@
 #rodape-superior{
-    width: 100%;
-    height: 250px;
-    text-align: center;
-    background-color: rgba(165, 42, 42, 0.733);
+    width: 100%; /*Define Largura*/ 
+    height: 250px; /*Define Altura*/
+    text-align: center; /*Alinha ao Centro da página*/
+    background-color: rgba(165, 42, 42, 0.733); /*Cor de fundo*/
 }
 #menu {
-    height: 50px;
-    text-align: center;
-    background-color: aqua;
+    height: 50px; /*Define Altura*/
+    text-align: center; /*Alinha ao Centro da página*/
+    background-color: aqua; /*Cor de fundo*/
 }
-section{
-    text-align: center;
+.container {
+    width: 80%; /*Define Largura*/
+    position: relative;
+    padding-top: 40px; /*Espaçamento em relação ao obejto de cima*/
+    padding-bottom: 40px; /*Espaçamento em relação ao obejto debaixo*/
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: space-evenly;*/
+    justify-content: center;
+    margin: 0 auto;
 }
+/*section{
+    text-align: center;
+}*/
 #rodape-inferior{
     clear: both; /*não permite elementos flutuantes ao lado*/
     text-align: center; /*alinhamento do texto*/
