@@ -1,0 +1,78 @@
+nav ul ul {
+display: none;
+
+}
+
+nav ul li:hover > ul {
+display: block;
+}
+
+nav ul {
+font-family: Verdana, sans-serif; /* fontes do menu */
+background: #FFFFFF;/**/ /* não sei aonde se aplica */
+box-shadow: 0px 0px 0px rgba(0,0,0,0.1); /* espessura e cor da borda no menu (sombra centralizada)*/
+padding: 0 05px; /* distancia do texto central do menu, até as bordas */
+/*border-radius: 5px;  radius do menu (formato da circunferencia )*/
+list-style:  none; /*colocar marcação antes do texto do menu (square/circle/disc/ icones)*/
+position: relative; /*posição do texto (verificar melhor)*/
+display: inline-table; /*define a posição das tabelas do menu (uma do lado da outra)*/
+/*left: 20%; VERIFICAR CODIGO (COLOQUEI POR CONTA PROPRIA)*/
+/*width: 60%; VERIFICAR CODIGO (COLOQUEI POR CONTA PROPRIA)*/
+position: -webkit-sticky;
+position: sticky;
+top: 0;
+}
+
+nav ul:after {
+content: ""; clear: both; display: block;  
+}
+
+nav ul li {
+  float: left; /*se o menu flutua ()*/ /*VERIFICAR CODIGO (COLOQUEI POR CONTA PROPRIA)*/
+
+}
+
+/* Efeito de mudança de cor, quando mouse fica sobre o menu */
+nav ul li:hover {
+background: #FFFFFF; /*fundo do menu com o efeito aplicado*/
+border-radius: 0px; /* radius do menu (formato da circunferencia )*/
+border-bottom: 0.5px solid #C32329;/*------------------------------------------*/
+}
+
+/* cor secundaria do texto, no efeito HOVER (quando mouse fica sobre o menu) */
+nav ul li:hover a { 
+color: #C32329; /* cor da letra no efeito hover*/
+/*text-decoration: underline;--------*/
+}
+
+nav ul li a {
+display: block; 
+padding: 5px 30px; /* distancia do texto do menu */
+color: #C32329;      
+text-decoration: none;
+text-shadow: 0px 0px 1px rgba(255,255,255, 0.1);
+}
+
+nav ul ul { /*cor do plano de funco e formato da borda do submenu (efeito hover)*/
+background: #FFFFFF; border-radius: 5px; padding: 5; /*padding, tamanho do preenchimento interno do submenu */
+position: absolute; top: 100%;
+}
+
+nav ul ul li { /*cor interna do efeito hover/ submenu*/
+float: none; 
+/*border-top: 0.5px solid #C32329; espessura das linhas internas (topo) do submenu*/
+/*border-bottom: 0.5px solid #C32329; espessura das linhas internas do submenu*/
+position: relative;
+}
+
+nav ul ul li a {
+padding: 10px 0px;/*padding dos submenus (largura e altura)*/
+color: #fff;
+}
+
+nav ul ul li a:hover { /*cor de seleção de caixa do efeito hover submenu */
+background: #FFFFFF; /*cor de fundo vermelha*/
+color: #C32329; /*cor do texto branca*/
+}
+
+
