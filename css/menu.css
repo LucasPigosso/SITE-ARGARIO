@@ -12,15 +12,13 @@ font-family: Verdana, sans-serif; /* fontes do menu */
 background: #FFFFFF;/**/ /* não sei aonde se aplica */
 box-shadow: 0px 0px 0px rgba(0,0,0,0.1); /* espessura e cor da borda no menu (sombra centralizada)*/
 padding: 0 05px; /* distancia do texto central do menu, até as bordas */
-/*border-radius: 5px;  radius do menu (formato da circunferencia )*/
 list-style:  none; /*colocar marcação antes do texto do menu (square/circle/disc/ icones)*/
 position: relative; /*posição do texto (verificar melhor)*/
 display: inline-table; /*define a posição das tabelas do menu (uma do lado da outra)*/
-/*left: 20%; VERIFICAR CODIGO (COLOQUEI POR CONTA PROPRIA)*/
-/*width: 60%; VERIFICAR CODIGO (COLOQUEI POR CONTA PROPRIA)*/
 position: -webkit-sticky;
 position: sticky;
 top: 0;
+left: 75px; /*É O QUE ESTA OCASIONANDO O ERRO DO SUBMENU(REMOVER)*/
 }
 
 nav ul:after {
@@ -28,7 +26,7 @@ content: ""; clear: both; display: block;
 }
 
 nav ul li {
-  float: left; /*se o menu flutua ()*/ /*VERIFICAR CODIGO (COLOQUEI POR CONTA PROPRIA)*/
+float: left; /*se o menu flutua ()*/ /*VERIFICAR CODIGO (COLOQUEI POR CONTA PROPRIA)*/
 
 }
 
@@ -42,7 +40,6 @@ border-bottom: 0.5px solid #C32329;/*------------------------------------------*
 /* cor secundaria do texto, no efeito HOVER (quando mouse fica sobre o menu) */
 nav ul li:hover a { 
 color: #C32329; /* cor da letra no efeito hover*/
-/*text-decoration: underline;--------*/
 }
 
 nav ul li a {
@@ -60,8 +57,6 @@ position: absolute; top: 100%;
 
 nav ul ul li { /*cor interna do efeito hover/ submenu*/
 float: none; 
-/*border-top: 0.5px solid #C32329; espessura das linhas internas (topo) do submenu*/
-/*border-bottom: 0.5px solid #C32329; espessura das linhas internas do submenu*/
 position: relative;
 }
 
